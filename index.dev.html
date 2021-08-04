@@ -30,12 +30,24 @@
                 </div>
 
                 <!-- mobile button goes here -->
-                <div class="md:hidden flex items-center">
-                <button class="mobile-menu-button">
+                <!-- <div class="md:hidden flex items-center">
+                <div class="mobile-menu-button">
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
                         <path fill="#000000" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
                     </svg>
-                </button>
+                </div>
+                
+                    <span class="hidden">
+                        <button class="cross-button">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="#000000" d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/>
+                            </svg>
+                        </button>
+                    </span>
+                </div> -->
+
+                <div class="menu-btn md:hidden flex items-center" id="mobile-menu-button">
+                    <div class="menu-btn__burger"></div>
                 </div>
         
             </div>
@@ -43,8 +55,6 @@
 
         <!-- mobile menu -->
         <div class="mobile-menu hidden md:hidden">
-            <!-- <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a> -->
             <a href="" class="block text-center pb-[30px]">About</a>
             <a href="" class="block text-center pb-[30px]">Projects</a>
             <a href="" class="block text-center pb-[56px]">Contact</a>
@@ -55,13 +65,27 @@
     </nav>
 
     <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        
+        menuBtn.addEventListener('click', () => {
+        if(!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
+        } else {
+            menuBtn.classList.remove('open');
+            menuOpen = false;
+        }
+        });
+
+
         // grab everything we need
-        const btn = document.querySelector("button.mobile-menu-button");
+        const btn = document.querySelector("#mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
 
         // add event listeners
         btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
+            menu.classList.toggle("hidden");
         });
     </script>
 

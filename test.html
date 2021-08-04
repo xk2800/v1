@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: green;
+            }
+            .menu-btn {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                border: 3px solid #fff;
+            }
+            .menu-btn__burger {
+                width: 50px;
+                height: 6px;
+                background: red;
+                border-radius: 5px;
+                /* box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2); */
+                transition: all 0.5s ease-in-out;
+            }
+            .menu-btn__burger::before,
+            .menu-btn__burger::after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 6px;
+                background: red;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+                transition: all 0.5s ease-in-out;
+            }
+            .menu-btn__burger::before {
+                transform: translateY(-16px);
+            }
+            .menu-btn__burger::after {
+                transform: translateY(16px);
+            }
+            /* ANIMATION */
+            .menu-btn.open .menu-btn__burger {
+                transform: translateX(-50px);
+                background: transparent;
+                box-shadow: none;
+            }
+            .menu-btn.open .menu-btn__burger::before {
+                transform: rotate(45deg) translate(35px, -35px);
+            }
+            .menu-btn.open .menu-btn__burger::after {
+                transform: rotate(-45deg) translate(35px, 35px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu-btn md:hidden flex items-center">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </body>
+</html>
