@@ -13,6 +13,10 @@
     --myred: #9f0710;
 }
 
+*{
+    scroll-behavior: smooth;
+}
+
 /* Navbar */
 .menu-btn {
     position: relative;
