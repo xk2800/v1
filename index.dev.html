@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xavier K.</title>
+    <title>Xavier Khew</title>
+
+    <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
-<body>
+<body class="bg-gray-100 mx-auto ">
     
+<!-- navbar goes here -->
+    <nav>
+        <div class="mx-auto"> 
+            <div class="flex justify-between pl-[30px] pr-[45px] py-[15px]">
+
+                <div class="flex">
+                    <a href="#home" class="flex">
+                        <img src="./resources/img/logo.png" alt="Xavier Khew's Logo" class="w-[120px]">
+                    </a>
+                </div>
+        
+                <!-- nav content right -->
+                <div class="hidden md:flex items-center space-x-[30.5px] text-xl">
+                    <a href="">About</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact</a>
+                    <a href="" class="bg-[color:var(--myred)] px-[18.75px] py-[25px] rounded-[50px] text-white">Resume</a>
+                </div>
+
+                <!-- mobile button goes here -->
+                <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <path fill="#000000" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
+                    </svg>
+                </button>
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <!-- <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a>
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a> -->
+            <a href="" class="block text-center pb-[30px]">About</a>
+            <a href="" class="block text-center pb-[30px]">Projects</a>
+            <a href="" class="block text-center pb-[56px]">Contact</a>
+            <div class="block text-center">
+                <a href="" class="bg-[color:var(--myred)] text-white px-[18.75px] py-[25px] rounded-[50px]">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // grab everything we need
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        // add event listeners
+        btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        });
+    </script>
+
+
 </body>
 </html>

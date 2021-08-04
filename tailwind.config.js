@@ -1,25 +1,23 @@
 module.exports = {
-  purge: [],
+    mode: 'jit',
+    purge: ['./*.html'],
     darkMode: false, // or 'media' or 'class'
-  theme: {
-      extend: {
-  
-          colors:{
-              primary:{
-                  'red': '#9F0710',
-              }
-          },
-  
-          fontFamily: {
-              main: [ 'Lexend Deca'],
-          },
-  
-  
-      },
-  },
-  variants: {
-      extend: {},
-  },
-  plugins: [],
-  }
-  
+    theme: {
+        extend: {
+
+            fontFamily: {
+                main: ['Lexend Deca'],
+                secondary: ['Roboto'],
+            },
+            width: {
+                '120': '7.5rem',
+            },
+
+
+        },
+    },
+    variants: {
+        extend: {},
+    },
+    plugins: [],
+};
