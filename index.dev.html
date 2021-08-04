@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier Khew</title>
+    
+    <script src="https://kit.fontawesome.com/1f2854c8b4.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
@@ -13,7 +15,7 @@
 <!-- navbar goes here -->
     <nav>
         <div class="mx-auto font-main"> 
-            <div class="flex justify-between pl-[4px] pr-[16px] py-[11px] md:pl-[30px] md:pr-[45px] md:py-[15px]">
+            <div class="flex justify-between pl-[4px] pr-[16px] py-[11px] lg:pl-[30px] lg:pr-[45px] lg:py-[15px]">
 
                 <div class="flex">
                     <a href="#home" class="flex">
@@ -64,7 +66,7 @@
         </div>
     </nav>
 
-    <div class="px-[16px] font-main pt-[104px] md:px-[274px] md:pt-[96px]">
+    <div class="px-[16px] font-main pt-[104px] lg:px-[274px] md:pt-[96px]">
         <section id="home">
             <div class="font-secondary mb-[1px] text-lg md:mb-[15px]">Hi, my name is</div>
             <div class="text-[33px] md:text-5xl md:mb-[17px]">Xavier Khew</div>
@@ -80,11 +82,12 @@
         </section>
 
 
-        <section id="about-me" class="mt-[258px] md:mt-[500px]">
+        <section id="about-me" class="mt-[350px] md:mt-[500px]">
             <div class="text-3xl mb-[26px] md:text-4xl">
                 About Me
             </div>
 
+            <div class="md:flex">
             <div class="md:flex">
                 <div class="text-lg mb-[36px] justify-evenly md:text-xl">
                     <p>
@@ -110,14 +113,82 @@
                     <img src="./resources/img/xavier-khew.png" alt="Xavier Khew's Image" class="rounded-[50px] w-4/6 border-[color:var(--myred)] border-4 mx-auto md:w-[2500px] md:h-[2414]">
                 </div>
             </div>
+
+        </section>
+
+        <section id="skills">
+            <div class="mt-[101px] md:mt-[119px]">
+                <div class="text-3xl mb-[26px] md:text-4xl">
+                    Skills
+                </div>
+
+                <div class="grid grid-cols-2 text-lg md:grid-cols-5 md:text-xl">
+                    <div>
+                        <!-- Languages -->
+                        <p class="font-bold text-[20px] md:text-[22px]">Languages</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>HTML</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>CSS</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>PHP</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>JavaScript</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>SQL</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Python</p>
+                    </div>
+                    <div>
+                        <!-- Frameworks -->
+                        <p class="font-bold text-[20px] md:text-[22px]">Frameworks</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Bootstrap</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Tailwind CSS</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>React JS</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Express.js</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Node.js</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Laravel</p>
+                    </div>
+                    <div>
+                        <!-- Tools -->
+                        <p class="font-bold text-[20px] mt-[22px] md:text-[22px] md:m-0">Tools</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>AWS</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Google Cloud</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Heroku</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Git/Github</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Chrome DevTools</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Postman</p>
+                    </div>
+                    <div class="mt-[48px] md:mt-[25px]">
+                        <!-- Tools Part 2-->
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>MongoDB</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>MySQL</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Postgresql</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Linux</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Zapier</p>
+                    </div>
+                    <div>
+                        <!-- Design -->
+                        <p class="font-bold text-[20px] mt-[22px] md:text-[22px] md:m-0">Design</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Figma</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Adobe Illustrator</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Adobe Photoshop</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Adobe XD</p>
+                        <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Wireframing</p>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
         </section>
 
         <section id="projects">
+            
+            <!-- for mobile -->
+
+            <!-- for non mobile -->
 
         </section>
 
         <section id="contact-me">
-
+            
         </section>
     </div>
 
