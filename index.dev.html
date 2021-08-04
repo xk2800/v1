@@ -12,7 +12,7 @@
     
 <!-- navbar goes here -->
     <nav>
-        <div class="mx-auto"> 
+        <div class="mx-auto font-main"> 
             <div class="flex justify-between pl-[30px] pr-[45px] py-[15px]">
 
                 <div class="flex">
@@ -55,40 +55,45 @@
 
         <!-- mobile menu -->
         <div class="mobile-menu hidden md:hidden">
-            <a href="" class="block text-center pb-[30px]">About</a>
-            <a href="" class="block text-center pb-[30px]">Projects</a>
-            <a href="" class="block text-center pb-[56px]">Contact</a>
+            <a href="#about-me" class="block text-center pb-[30px]">About</a>
+            <a href="#projects" class="block text-center pb-[30px]">Projects</a>
+            <a href="#contact-me" class="block text-center pb-[56px]">Contact</a>
             <div class="block text-center">
                 <a href="" class="bg-[color:var(--myred)] text-white px-[18.75px] py-[25px] rounded-[50px]">Resume</a>
             </div>
         </div>
     </nav>
 
-    <script>
-        const menuBtn = document.querySelector('.menu-btn');
-        let menuOpen = false;
-        
-        menuBtn.addEventListener('click', () => {
-        if(!menuOpen) {
-            menuBtn.classList.add('open');
-            menuOpen = true;
-        } else {
-            menuBtn.classList.remove('open');
-            menuOpen = false;
-        }
-        });
+    <div class="px-[274px] font-main">
+        <section id="home">
+            <div class="font-secondary text-xl mb-[15px]">Hi, my name is</div>
+            <div class="text-5xl mb-[17px]">Xavier Khew</div>
+            <div class="rolling-text text-5xl mb-[60px]">
+                <p class="animate-text">
+                    <span>I design & build things for the web</span>
+                    <span>I'm a UI/UX enthusiast</span>
+                    <span>I edit videos</span>
+                    <span>I take pictures of my cat</span>
+                </p>
+            </div>
+            <a href="" class="bg-[color:var(--myred)] pr-[22px] pl-[23px] pt-[20px] pb-[22px] rounded-[50px] text-white text-2xl">About Me</a>
+        </section>
 
 
-        // grab everything we need
-        const btn = document.querySelector("#mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
+        <section id="about-me">
 
-        // add event listeners
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
+        </section>
 
+        <section id="projects">
 
+        </section>
+
+        <section id="contact-me">
+
+        </section>
+    </div>
+
+    <script src="./resources/javascript/navbar.js"></script>
+    <script src="./resources/javascript/rolling-text.js"></script>
 </body>
 </html>

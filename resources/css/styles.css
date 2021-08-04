@@ -605,6 +605,53 @@ video {
   margin-right: auto;
 }
 
+.mx-\[274px\]{
+  margin-left: 274px;
+  margin-right: 274px;
+}
+
+.mx-\[18\.75px\]{
+  margin-left: 18.75px;
+  margin-right: 18.75px;
+}
+
+.my-\[25px\]{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.mb-\[\]{
+  margin-bottom: ;
+}
+
+.mb-\[25px\]{
+  margin-bottom: 25px;
+}
+
+.mb-\[250px\]{
+  margin-bottom: 250px;
+}
+
+.mb-\[15px\]{
+  margin-bottom: 15px;
+}
+
+.mb-\[34px\]{
+  margin-bottom: 34px;
+}
+
+.mb-\[17px\]{
+  margin-bottom: 17px;
+}
+
+.mb-\[30px\]{
+  margin-bottom: 30px;
+}
+
+.mb-\[60px\]{
+  margin-bottom: 60px;
+}
+
 .block{
   display: block;
 }
@@ -679,6 +726,21 @@ video {
   padding-bottom: 25px;
 }
 
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[274\]{
+  padding-left: 274;
+  padding-right: 274;
+}
+
+.px-\[274px\]{
+  padding-left: 274px;
+  padding-right: 274px;
+}
+
 .pl-\[30px\]{
   padding-left: 30px;
 }
@@ -695,13 +757,75 @@ video {
   padding-bottom: 56px;
 }
 
+.pt-\[25px\]{
+  padding-top: 25px;
+}
+
+.pt-\[28px\]{
+  padding-top: 28px;
+}
+
+.pt-\[22px\]{
+  padding-top: 22px;
+}
+
+.pl-\[18\.75px\]{
+  padding-left: 18.75px;
+}
+
+.pl-\[22px\]{
+  padding-left: 22px;
+}
+
+.pr-\[22px\]{
+  padding-right: 22px;
+}
+
+.pl-\[2px\]{
+  padding-left: 2px;
+}
+
+.pl-\[23px\]{
+  padding-left: 23px;
+}
+
+.pb-\[22px\]{
+  padding-bottom: 22px;
+}
+
+.pt-\[2px\]{
+  padding-top: 2px;
+}
+
+.pt-\[20px\]{
+  padding-top: 20px;
+}
+
 .text-center{
   text-align: center;
+}
+
+.font-main{
+  font-family: Lexend Deca;
+}
+
+.font-secondary{
+  font-family: Roboto;
 }
 
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-white{
@@ -724,6 +848,8 @@ video {
 :root {
   --myred: #9f0710;
 }
+
+/* Navbar */
 
 .menu-btn {
   position: relative;
@@ -775,6 +901,72 @@ video {
 
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Rolling Text Intro */
+
+.rolling-text p {
+  margin: 0;
+  overflow: hidden;
+}
+
+.rolling-text p span {
+  /* color: rgb(0, 0, 0); */
+  /* font-weight: 700; */
+  display: inline-block;
+  /* line-height: 46px; */
+  display: none;
+}
+
+.rolling-text p span.text-in {
+  display: block;
+  -webkit-animation: textIn 0.5s ease;
+          animation: textIn 0.5s ease;
+}
+
+.rolling-text p span.text-out {
+  -webkit-animation: textOut 0.5s ease;
+          animation: textOut 0.5s ease;
+}
+
+@-webkit-keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 @media (min-width: 768px){
