@@ -18,49 +18,50 @@
 }
 
 /* Projects Img */
-#container, #container-2 {
-    border: 1px solid grey;
+#container,
+#container-2, #shadow-projects {
+    border: 1px solid #F3F4F6;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
         0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1),
         0 16px 16px rgba(0, 0, 0, 0.05);
 }
-
-#container{
-    background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256637/4_ihkptk.png);
-    /* background-attachment: fixed;
+@media only screen and (max-width: 768px) {
+    #container {
+        background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256637/4_ihkptk.png);
+        /* background-attachment: fixed;
     background-position: center;*/
-    background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
-    /* background-blend-mode: lighten; */
-    background-size: cover;
-}
+        background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
+        /* background-blend-mode: lighten; */
+        background-size: cover;
+    }
 
-#container-2{
-    background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256321/1_zo8ohu.png);
-    /* background-attachment: fixed;*/
-    background-position: center;
-    background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
-    /* background-blend-mode: lighten; */
-    background-size: cover;
-}
+    #container-2 {
+        background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256321/1_zo8ohu.png);
+        /* background-attachment: fixed;*/
+        background-position: center;
+        background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
+        /* background-blend-mode: lighten; */
+        background-size: cover;
+    }
 
-#container-3{
-    background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256321/2_qpc2cv.png);
-    /* background-attachment: fixed;*/
-    background-position: center;
-    background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
-    /* background-blend-mode: lighten; */
-    background-size: cover;
-}
+    #container-3 {
+        background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256321/2_qpc2cv.png);
+        /* background-attachment: fixed;*/
+        background-position: center;
+        background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
+        /* background-blend-mode: lighten; */
+        background-size: cover;
+    }
 
-#container-4{
-    background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256701/3_tlln1z.png);
-    /* background-attachment: fixed;*/
-    background-position: center;
-    background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
-    /* background-blend-mode: lighten; */
-    background-size: cover;
+    #container-4 {
+        background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256701/3_tlln1z.png);
+        /* background-attachment: fixed;*/
+        background-position: center;
+        background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION  */
+        /* background-blend-mode: lighten; */
+        background-size: cover;
+    }
 }
-
 
 /* Navbar */
 .menu-btn {
