@@ -1,191 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
 
-    <style>
-        /* project 4 */
+        <link rel="stylesheet" href="./resources/css/styles.css">
 
-position: absolute;
-width: 328px;
-height: 215px;
-left: 16px;
-top: 2956px;
+        <style>
+            #container {
+                width: 100%;
+                height: 100%;
+            }
 
+            #container,
+            #overlay:before {
+                background: url(https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Racehub%20header%20images%2016x9/Vietnam.jpg);
+                background-repeat: no-repeat; /* OPTIONAL BASED ON CONDITION */ 
+            }
 
+            #overlay {
+                margin: 0 auto;
+                /* max-width: 768px; */
+                overflow: hidden;
+                /* padding: 50px; */
+                position: relative;
+                color: white;
+                z-index: 0;
+            }
 
-/* image */
+            #overlay:before {
+                content: "";
+                filter: blur(20px);
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="">
+                
+                
+            <div class="rounded-[50px] border-[color:var(--myred)] border-4" id="container">
+                <div class="mx-[21px] my-[22px]" id="overlay">
+                        
+                            <p>Tech Career Days 2021</p>
+                            <p>
+                                A static site for Tech Career Days 2021, a jobfair hosted by IT Society MMU Cyberjaya. 
+                                Used to present relevant information for the event.
+                            </p>
+                            <p>HTML, CSS, Bootstrap, Javascript</p>
+                            <br><br><br>
+                </div>
+            </div>
+            
+        </div>
 
-position: absolute;
-width: 328px;
-height: 215px;
-left: 16px;
-top: 2956px;
-
-
-
-/* outer box */
-
-position: absolute;
-width: 328px;
-height: 215px;
-left: 16px;
-top: 2956px;
-
-background: #F3F4F6;
-box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.3);
-border-radius: 50px;
-
-
-/* tcd front end 1 */
-
-position: absolute;
-width: 328px;
-height: 215px;
-left: 16px;
-top: 2956px;
-
-background: url(tcd front end.png);
-border-radius: 50px;
-
-
-/* blur 1 */
-
-position: absolute;
-width: 328px;
-height: 215px;
-left: 16px;
-top: 2956px;
-
-background: rgba(243, 244, 246, 0.75);
-backdrop-filter: blur(6px);
-/* Note: backdrop-filter has minimal browser support */
-border-radius: 50px;
-
-
-/* Group 34 */
-
-position: absolute;
-width: 287px;
-height: 179.67px;
-left: 36px;
-top: 2970.93px;
-
-
-
-/* A F&B ecommerce platform with full function features for customers, staff and owners views. */
-
-position: absolute;
-width: 286px;
-height: 83px;
-left: 37px;
-top: 3003px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-text-align: justify;
-
-color: #000000;
-
-
-
-/* REXFoodipedia */
-
-position: absolute;
-width: 256.05px;
-height: 22.89px;
-left: 36px;
-top: 2970.93px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 23px;
-
-color: #000000;
-
-
-
-/* HTML, CSS, Bootstrap, JavaScript, PHP, MySQL */
-
-position: absolute;
-width: 278.27px;
-height: 19.91px;
-left: 36.97px;
-top: 3076.35px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 20px;
-/* identical to box height */
-
-color: #000000;
-
-
-
-/* Group 22 */
-
-position: absolute;
-width: 41.79px;
-height: 19.41px;
-left: 36.73px;
-top: 3131.19px;
-
-
-
-/* github-alt 1 */
-
-position: absolute;
-width: 18.57px;
-height: 17.92px;
-left: 36.73px;
-top: 3132.18px;
-
-
-
-/* Vector */
-
-position: absolute;
-left: 6.45%;
-right: 8.33%;
-top: 4.15%;
-bottom: 4.15%;
-
-background: #000000;
-
-
-/* external-link-alt-black 1 */
-
-position: absolute;
-left: 16.65%;
-right: 78.19%;
-top: 61.16%;
-bottom: 38.46%;
-
-
-
-/* Vector */
-
-position: absolute;
-left: 8.33%;
-right: 8.33%;
-top: 8.33%;
-bottom: 8.33%;
-
-background: #000000;
-
-    </style>
-</head>
-<body>
-    
-</body>
+        <br><br><br><br>
+    </body>
 </html>

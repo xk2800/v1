@@ -646,6 +646,14 @@ video {
   }
 }
 
+.visible{
+  visibility: visible;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
 .static{
   position: static;
 }
@@ -695,6 +703,18 @@ video {
 
 .mt-\[48px\]{
   margin-top: 48px;
+}
+
+.mb-\[20px\]{
+  margin-bottom: 20px;
+}
+
+.mb-\[22px\]{
+  margin-bottom: 22px;
+}
+
+.mr-\[7\.5px\]{
+  margin-right: 7.5px;
 }
 
 .block{
@@ -792,6 +812,16 @@ video {
   padding-right: 16px;
 }
 
+.px-\[21px\]{
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.py-\[22px\]{
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .pl-\[4px\]{
   padding-left: 4px;
 }
@@ -885,17 +915,22 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
 .blur{
   --tw-blur: blur(8px);
   filter: var(--tw-filter);
 }
 
-.drop-shadow-md{
-  --tw-drop-shadow: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+.filter{
   filter: var(--tw-filter);
 }
 
-.backdrop-filter{
+.backdrop-blur-\[20px\]{
+  --tw-backdrop-blur: blur(20px);
   -webkit-backdrop-filter: var(--tw-backdrop-filter);
           backdrop-filter: var(--tw-backdrop-filter);
 }
@@ -908,49 +943,57 @@ video {
   --myred: #9f0710;
 }
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
-html, body, #container {
-  width: 100%;
-  height: 100%;
+/* Projects Img */
+
+#container, #container-2 {
+  border: 1px solid grey;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1),
+        0 16px 16px rgba(0, 0, 0, 0.05);
 }
 
-#container,
-#overlay:before {
-  background: url(https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Racehub%20header%20images%2016x9/Vietnam.jpg) no-repeat fixed 0 0/cover;
+#container{
+  background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256637/4_ihkptk.png);
+  /* background-attachment: fixed;
+    background-position: center;*/
+  background-repeat: no-repeat;
+  /* OPTIONAL BASED ON CONDITION  */
+  /* background-blend-mode: lighten; */
+  background-size: cover;
 }
 
-#container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+#container-2{
+  background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256321/1_zo8ohu.png);
+  /* background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  /* OPTIONAL BASED ON CONDITION  */
+  /* background-blend-mode: lighten; */
+  background-size: cover;
 }
 
-#overlay {
-  max-height: 200px;
-  margin: 0 auto;
-  max-width: 768px;
-  overflow: hidden;
-  padding: 50px;
-  position: relative;
-  color: white;
-  font-family: 'Lato';
-  position: relative;
-  text-align: center;
-  z-index: 0;
+#container-3{
+  background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256321/2_qpc2cv.png);
+  /* background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  /* OPTIONAL BASED ON CONDITION  */
+  /* background-blend-mode: lighten; */
+  background-size: cover;
 }
 
-#overlay:before {
-  content: '';
-  filter: blur(20px);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
+#container-4{
+  background: url(https://res.cloudinary.com/djiqzvyik/image/upload/v1628256701/3_tlln1z.png);
+  /* background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  /* OPTIONAL BASED ON CONDITION  */
+  /* background-blend-mode: lighten; */
+  background-size: cover;
 }
 
 /* Navbar */
@@ -1073,7 +1116,21 @@ html, body, #container {
   }
 }
 
+@media (min-width: 640px){
+  .sm\:visible{
+    visibility: visible;
+  }
+
+  .sm\:hidden{
+    display: none;
+  }
+}
+
 @media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+
   .md\:m-0{
     margin: 0px;
   }
@@ -1151,6 +1208,10 @@ html, body, #container {
 }
 
 @media (min-width: 1024px){
+  .lg\:visible{
+    visibility: visible;
+  }
+
   .lg\:py-\[15px\]{
     padding-top: 15px;
     padding-bottom: 15px;
