@@ -7,14 +7,18 @@
     <title>Xavier Khew</title>
     <link rel="shortcut icon" href="./resources/img/favicon.png" type="image/x-icon">
 
+    <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/1f2854c8b4.js" crossorigin="anonymous"></script>
+    <!-- AOS Js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
 <body class="bg-gray-100 mx-auto ">
 
 <!-- navbar goes here -->
-    <nav>
+    <nav data-aos="fade-down">
         <div class="mx-auto font-main"> 
             <div class="flex justify-between pl-[4px] pr-[16px] py-[11px] lg:pl-[30px] lg:pr-[45px] lg:py-[15px]">
 
@@ -52,7 +56,7 @@
 
 <!-- Home section starts here -->
     <div class="px-[16px] font-main pt-[104px] xl:px-[274px] md:pt-[96px]">
-        <section id="home">
+        <section id="home" data-aos="fade-up">
             <div class="font-secondary mb-[1px] text-lg md:mb-[15px]">Hi, my name is</div>
             <div class="text-[33px] md:text-5xl md:mb-[17px]">Xavier Khew</div>
             <div class="rolling-text text-[33px] mb-[35px] leading-9 md:text-5xl md:mb-[60px]">
@@ -69,12 +73,12 @@
 
 <!-- About me section starts here -->
         <section id="about-me" class="mt-[350px] md:mt-[500px]">
-            <div class="text-3xl mb-[26px] md:text-4xl">
+            <div class="text-3xl mb-[26px] md:text-4xl" data-aos="fade-up">
                 About Me
             </div>
 
             <!-- <div class="md:flex"> -->
-            <div class="md:flex">
+            <div class="md:flex" data-aos="fade-up" data-aos-duration="1500">
                 <div class="text-lg mb-[36px] justify-evenly font-secondary md:text-xl">
                     <p>
                         Hello! My name is Xavier from sunny <a href="https://en.wikipedia.org/wiki/Kuala_Lumpur" class="font-bold hover:underline hover:text-gray-500">Kuala Lumpur, Malaysia</a> and I enjoy developing things 
@@ -105,12 +109,12 @@
 <!-- Skills section starts here -->
         <section id="skills">
             <div class="mt-[101px] md:mt-[119px]">
-                <div class="text-3xl mb-[26px] md:text-4xl">
+                <div class="text-3xl mb-[26px] md:text-4xl" data-aos="fade-up">
                     Skills
                 </div>
 
                 <div class="grid grid-cols-2 text-lg font-secondary md:grid-cols-5 md:text-xl">
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <!-- Languages -->
                         <p class="font-bold text-[20px] md:text-[22px]">Languages</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>HTML</p>
@@ -120,7 +124,7 @@
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>SQL</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Python</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <!-- Frameworks -->
                         <p class="font-bold text-[20px] md:text-[22px]">Frameworks</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Bootstrap</p>
@@ -130,7 +134,7 @@
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Node.js</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Laravel</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <!-- Tools -->
                         <p class="font-bold text-[20px] mt-[22px] md:text-[22px] md:m-0">Tools</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>AWS</p>
@@ -140,7 +144,7 @@
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Chrome DevTools</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Postman</p>
                     </div>
-                    <div class="mt-[48px] md:mt-[25px]">
+                    <div class="mt-[48px] md:mt-[25px]" data-aos="fade-up" data-aos-duration="1500">
                         <!-- Tools Part 2-->
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>MongoDB</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>MySQL</p>
@@ -148,7 +152,7 @@
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Linux</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Zapier</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <!-- Design -->
                         <p class="font-bold text-[20px] mt-[22px] md:text-[22px] md:m-0">Design</p>
                         <p><i class="fas fa-chevron-right pr-[4.7px]"></i>Figma</p>
@@ -165,14 +169,14 @@
 <!-- Projects section starts here -->
         <section id="projects" class="mt-[101px]">
             
-            <div class="text-3xl mb-[26px] md:text-4xl">
+            <div class="text-3xl mb-[26px] md:text-4xl" data-aos="fade-up">
                 Something I've Built
             </div>
 
         <!-- for mobile -->
             <div class="text-white block md:hidden">
                 
-                <div class="rounded-[50px] border-4 font-secondary mb-[20px]" id="container">
+                <div class="rounded-[50px] border-4 font-secondary mb-[20px]" id="container" data-aos="fade-up" data-aos-duration="1500">
                     <div class="backdrop-blur-[20px] rounded-[50px] px-[21px] py-[22px]">
                         <p class="font-bold mb-[22px] text-xl">Tech Career Days 2021</p>
                         <p class="mb-[20px] text-lg">
@@ -187,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[20px]" id="container-2">
+                <div class="rounded-[50px] border-4 font-secondary mb-[20px]" id="container-2" data-aos="fade-up" data-aos-duration="1500">
                     <div class="backdrop-blur-[20px] rounded-[50px] px-[21px] py-[22px]">
                         <p class="font-bold mb-[22px] text-xl">Tech Career Days 2021 Resume Submission Portal</p>
                         <p class="mb-[20px] text-lg">
@@ -203,7 +207,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[20px]" id="container-3">
+                <div class="rounded-[50px] border-4 font-secondary mb-[20px]" id="container-3" data-aos="fade-up" data-aos-duration="1500">
                     <div class="backdrop-blur-[20px] rounded-[50px] px-[21px] py-[22px]">
                         <p class="font-bold mb-[22px] text-xl">Linktree Alternative</p>
                         <p class="mb-[20px] text-lg">
@@ -217,7 +221,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary" id="container-4">
+                <div class="rounded-[50px] border-4 font-secondary" id="container-4" data-aos="fade-up" data-aos-duration="1500">
                     <div class="backdrop-blur-[20px] rounded-[50px] px-[21px] py-[22px]">
                         <p class="font-bold mb-[22px] text-xl">REXFoodipedia</p>
                         <p class="mb-[20px] text-lg">
@@ -236,7 +240,7 @@
         <!-- for desktop -->
             <div class="hidden md:grid grid-cols-2 text-xl">
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[30px] w-[480px]" id="shadow-projects">
+                <div class="rounded-[50px] border-4 font-secondary mb-[30px] w-[480px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
                     <img src="./resources/img/tcd-front-end.png" alt="" class="rounded-t-[50px] rounded-b-[5px] mx-auto">
                     <div class="rounded-[50px] pt-[22px] px-[16px]">
                         <p class="font-bold mb-[55px] text-[22px]">Tech Career Days 2021</p>
@@ -252,7 +256,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[30px] ml-[30px] w-[480px]" id="shadow-projects">
+                <div class="rounded-[50px] border-4 font-secondary mb-[30px] ml-[30px] w-[480px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
                     <img src="./resources/img/tcd-resume.png" alt="" class="rounded-t-[50px] rounded-b-[5px] mx-auto">
                     <div class="rounded-[50px] pt-[22px] px-[16px]">
                         <p class="font-bold mb-[22px] text-[22px]">Tech Career Days 2021 Resume Submission Portal</p>
@@ -269,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[20px] w-[480px]" id="shadow-projects">
+                <div class="rounded-[50px] border-4 font-secondary mb-[20px] w-[480px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
                     <img src="./resources/img/links-site.png" alt="" class="rounded-t-[50px] rounded-b-[5px] h-[270px] mx-auto">
                     <div class=" rounded-[50px] pt-[22px] px-[16px]">
                         <p class="font-bold mb-[22px] text-[22px]">Linktree Alternative</p>
@@ -284,7 +288,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary ml-[30px] w-[480px] h-[524px]" id="shadow-projects">
+                <div class="rounded-[50px] border-4 font-secondary ml-[30px] w-[480px] h-[524px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
                     <img src="./resources/img/fyp.png" alt="" class="rounded-t-[50px] rounded-b-[5px] h-[270px] mx-auto">
                     <div class="rounded-[50px] pt-[22px] px-[16px]">
                         <p class="font-bold mb-[22px] text-[22px]">REXFoodipedia</p>
@@ -307,50 +311,50 @@
 
 <!-- Contact me section starts here -->
         <section id="contact-me" class="mt-[103px]">
-            <div class="font-secondary text-lg mb-[1px] md:mb-[24px]">
+            <div class="font-secondary text-lg mb-[1px] md:mb-[24px]" data-aos="fade-up" data-aos-duration="1500">
                 What's Next?
             </div>
-            <div class="text-3xl mb-[10px] md:text-4xl  md:mb-[24px]">
+            <div class="text-3xl mb-[10px] md:text-4xl md:mb-[24px]" data-aos="fade-up" data-aos-duration="1500">
                 Get In Touch
             </div>
-            <p class="text-lg mb-[26px] md:mb-[40px]">
+            <p class="text-lg mb-[26px] md:mb-[40px]" data-aos="fade-up" data-aos-duration="1500">
                 Although I'm not currently looking for any new opportunities, my inbox is always open. Whether 
                 you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
-            <a href="mailto:contact.xavierk@gmail.com" class="bg-[color:var(--myred)] pr-[11px] pl-[13px] pt-[15px] pb-[15px] rounded-[50px] text-white text-xl md:pr-[21px] md:pl-[18px] md:pt-[27px] md:pb-[23px] md:text-2xl hover:bg-[color:var(--mydarkred)]">Say Hello</a>
+            <a href="mailto:contact.xavierk@gmail.com" class="bg-[color:var(--myred)] pr-[11px] pl-[13px] pt-[15px] pb-[15px] rounded-[50px] text-white text-xl md:pr-[21px] md:pl-[18px] md:pt-[27px] md:pb-[23px] md:text-2xl hover:bg-[color:var(--mydarkred)]" data-aos="fade-up" data-aos-duration="1500">Say Hello</a>
         </section>
     
 
 <!-- Social media icons starts here -->
-        <section id="social-media" class="mt-[119px] mb-[50px]">
+        <section id="social-media" class="mt-[119px] mb-[100px]">
             <div class="hidden md:block">
                 <div class="flex justify-between">
-                    <div class="flex" style="text-align:center;">
+                    <div class="flex" style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">
                         Designed & Built with &#10084;&#65039; by Xavier K.
                         <br /> in Kuala Lumpur &#169 2021
                     </div>
                     <div class="md:flex items-center text-[color:var(--myred)]">
-                        <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://github.com/xk2800">Github</a>
-                        <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://www.linkedin.com/in/xavier-khew/">Linkedin</a>
-                        <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://instagram.com/xk2800">Instagram</a>
+                        <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://github.com/xk2800" data-aos="fade-up" data-aos-duration="1600">Github</a>
+                        <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://www.linkedin.com/in/xavier-khew/" data-aos="fade-up" data-aos-duration="1700">Linkedin</a>
+                        <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://instagram.com/xk2800" data-aos="fade-up" data-aos-duration="1800">Instagram</a>
                     </div>
                 </div>
             </div>
 
             <div class="block md:hidden text-center">
-                <div class="mb-[15px]">
+                <div class="mb-[15px]" data-aos="fade-up" data-aos-duration="1500">
                     <p>
                         Designed & Built with &#10084;&#65039; by Xavier K.
                         <br /> in Kuala Lumpur &#169 2021
                     </p>
                 </div>
 
-                <hr class="border-1 border-black" />
+                <hr class="border-1 border-black" data-aos="fade-up" data-aos-duration="1500"/>
                 
                 <div class="text-[color:var(--myred)] mt-[15px]">
-                    <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://github.com/xk2800">Github</a>
-                    <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://www.linkedin.com/in/xavier-khew/">Linkedin</a>
-                    <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://instagram.com/xk2800">Instagram</a>
+                    <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://github.com/xk2800" data-aos="fade-up" data-aos-duration="1700">Github</a>
+                    <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://www.linkedin.com/in/xavier-khew/" data-aos="fade-up" data-aos-duration="1800">Linkedin</a>
+                    <a class="mr-[22px] hover:text-[color:var(--mydarkred)]" href="https://instagram.com/xk2800" data-aos="fade-up" data-aos-duration="1900">Instagram</a>
                 </div>
             </div>
         </section>
@@ -362,5 +366,9 @@
 
     <script src="./resources/javascript/navbar.js"></script>
     <script src="./resources/javascript/rolling-text.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

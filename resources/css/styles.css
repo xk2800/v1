@@ -590,16 +590,6 @@ video {
 *, ::before, ::after{
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
-  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
-  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
-  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
-  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
-  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
-  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
-  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
-  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -653,16 +643,6 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-\[21px\]{
-  margin-left: 21px;
-  margin-right: 21px;
-}
-
-.my-\[22px\]{
-  margin-top: 22px;
-  margin-bottom: 22px;
 }
 
 .mb-\[1px\]{
@@ -767,6 +747,102 @@ video {
 
 .mt-\[15px\]{
   margin-top: 15px;
+}
+
+.mb-\[60px\]{
+  margin-bottom: 60px;
+}
+
+.mb-\[100px\]{
+  margin-bottom: 100px;
+}
+
+.mb-\[1000px\]{
+  margin-bottom: 1000px;
+}
+
+.mb-\[00px\]{
+  margin-bottom: 00px;
+}
+
+.mb-\[200px\]{
+  margin-bottom: 200px;
+}
+
+.mb-\[250px\]{
+  margin-bottom: 250px;
+}
+
+.mb-\[210px\]{
+  margin-bottom: 210px;
+}
+
+.mb-\[220px\]{
+  margin-bottom: 220px;
+}
+
+.mb-\[230px\]{
+  margin-bottom: 230px;
+}
+
+.mb-\[235px\]{
+  margin-bottom: 235px;
+}
+
+.mb-\[232px\]{
+  margin-bottom: 232px;
+}
+
+.mb-\[231px\]{
+  margin-bottom: 231px;
+}
+
+.mb-\[px\]{
+  margin-bottom: px;
+}
+
+.mb-\[221px\]{
+  margin-bottom: 221px;
+}
+
+.mb-\[21px\]{
+  margin-bottom: 21px;
+}
+
+.mb-\[211px\]{
+  margin-bottom: 211px;
+}
+
+.mb-\[131px\]{
+  margin-bottom: 131px;
+}
+
+.mb-\[121px\]{
+  margin-bottom: 121px;
+}
+
+.mb-\[122px\]{
+  margin-bottom: 122px;
+}
+
+.mb-\[125px\]{
+  margin-bottom: 125px;
+}
+
+.mb-\[124px\]{
+  margin-bottom: 124px;
+}
+
+.mb-\[123px\]{
+  margin-bottom: 123px;
+}
+
+.mb-\[120px\]{
+  margin-bottom: 120px;
+}
+
+.mb-\[115px\]{
+  margin-bottom: 115px;
 }
 
 .block{
@@ -1024,15 +1100,6 @@ video {
 
 .opacity-50{
   opacity: 0.5;
-}
-
-.blur{
-  --tw-blur: blur(8px);
-  filter: var(--tw-filter);
-}
-
-.filter{
-  filter: var(--tw-filter);
 }
 
 .backdrop-blur-\[20px\]{
