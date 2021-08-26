@@ -1,0 +1,20 @@
+{
+  "name": "xk2800.github.io",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img alt=\"Logo\" src=\"https://raw.githubusercontent.com/xk2800/xk2800.github.io/master/resources/img/favicon.png\" width=\"100\" />\r </div>\r <h1 align=\"center\">\r   xavierkhew.tech\r </h1>\r <p align=\"center\">\r   The first iteration of <a href=\"https://xavierkhew.tech/\" target=\"_blank\">xavierkhew.tech</a> built with HTML, <a href=\"https://tailwindcss.com/\" target=\"_blank\">Tailwind CSS</a>, <a href=\"https://michalsnik.github.io/aos/\" target=\"_blank\">AOS</a>  and hosted with GitHub Pages.\r </p>",
+  "main": "tailwind-default.config.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./resources/css/styles.css  --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xk2800/xk2800.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xk2800/xk2800.github.io/issues"
+  },
+  "homepage": "https://github.com/xk2800/xk2800.github.io#readme"
+}
