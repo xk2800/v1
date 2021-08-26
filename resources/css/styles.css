@@ -749,10 +749,6 @@ video {
   margin-top: 15px;
 }
 
-.mb-\[50px\]{
-  margin-bottom: 50px;
-}
-
 .block{
   display: block;
 }
@@ -987,6 +983,11 @@ video {
 
 .text-\[22px\]{
   font-size: 22px;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -1226,6 +1227,10 @@ video {
   }
 }
 
+.hover\:hidden:hover{
+  display: none;
+}
+
 .hover\:bg-\[color\:var\(--mydarkred\)\]:hover{
   background-color: var(--mydarkred);
 }
@@ -1241,6 +1246,18 @@ video {
 
 .hover\:underline:hover{
   text-decoration: underline;
+}
+
+.hover\:backdrop-blur-\[20px\]:hover{
+  --tw-backdrop-blur: blur(20px);
+  -webkit-backdrop-filter: var(--tw-backdrop-filter);
+          backdrop-filter: var(--tw-backdrop-filter);
+}
+
+.hover\:backdrop-blur-\[0px\]:hover{
+  --tw-backdrop-blur: blur(0px);
+  -webkit-backdrop-filter: var(--tw-backdrop-filter);
+          backdrop-filter: var(--tw-backdrop-filter);
 }
 
 @media (min-width: 768px){
