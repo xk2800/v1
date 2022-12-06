@@ -10,15 +10,16 @@
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/1f2854c8b4.js" crossorigin="anonymous"></script>
     <!-- AOS Js CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
 
     <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="stylesheet" href="/resources/css/styles2.css">
 </head>
 <body class="bg-gray-100 mx-auto ">
 
 <!-- navbar goes here -->
-    <nav data-aos="fade-down">
+    <nav>
         <div class="mx-auto font-main"> 
             <div class="flex justify-between pl-[4px] pr-[16px] py-[11px] lg:pl-[30px] lg:pr-[45px] lg:py-[15px]">
 
@@ -55,7 +56,7 @@
     </nav>
 
 <!-- Home section starts here -->
-    <div class="px-[16px] font-main pt-[104px] xl:px-[274px] md:pt-[96px]">
+    <div class="px-[16px] font-main pt-[104px] xl:px-[274px] md:pt-[96px] gsap-animations">
         <section id="home" data-aos="fade-up">
             <div class="font-secondary mb-[1px] text-lg md:mb-[15px]">Hi, my name is</div>
             <div class="text-[33px] md:text-5xl md:mb-[17px]">Xavier Khew</div>
@@ -368,9 +369,29 @@ Whether
 
     </div>
 
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+            <span class="text">Hello,</span>
+            </h1>
+
+            <h1 class="hide">
+            <span class="text">Welcome to</span>
+            </h1>
+
+            <h1 class="hide">
+            <span class="text">my website</span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="slider"></div>
+
     <script src="./resources/javascript/navbar.js"></script>
     <script src="./resources/javascript/rolling-text.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/resources/javascript/gsap.min.js"></script>
+    <script src="/resources/javascript/gsap-animation.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
     <script>
         AOS.init();
     </script>
