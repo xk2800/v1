@@ -30,3 +30,11 @@
     display: inline-block;
   }
 }
+
+*{
+  scroll-margin-top: 68px;
+}
+
+.rolling-text p {
+  min-height: 55px !important;
+}
