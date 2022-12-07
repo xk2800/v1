@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./resources/img/favicon.png" type="image/x-icon">
 
     <!-- Font Awesome CDN -->
-    <!-- <script src="https://kit.fontawesome.com/1f2854c8b4.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/1f2854c8b4.js" crossorigin="anonymous"></script>
     <!-- AOS Js CDN -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
@@ -86,7 +86,7 @@
 
 <!-- Home section starts here -->
     <div class="container gsap-animations">
-        <section class="d-flex flex-column justify-content-center" id="home">
+        <section class="d-flex flex-column justify-content-center with-viewport-height" id="home">
             <div>
               <div class="font18-static">Hi, my name is</div>
             <div class="font-main font48">Xavier Khew</div>
@@ -98,50 +98,52 @@
                     <span>I take pictures of my cat</span>
                 </p>
             </div>
-            <a href="#about-me" class="btn btn-main font-main pr-[22px] pl-[23px] pt-[20px] pb-[22px] rounded-[50px] text-white text-2xl hover:bg-[color:var(--mydarkred)]">About Me</a>
+            <a href="#about-me" class="btn btn-main font-main">About Me</a>
             </div>
         </section>
 
 
 <!-- About me section starts here -->
-        <section id="about-me" class="">
-            <div class="font-main text-3xl mb-[26px] md:text-4xl">
+        <section id="about-me" class="with-viewport-height-desktop">
+            <div class="font-main font36 mb-4">
                 About Me
             </div>
 
             <!-- <div class="md:flex"> -->
-            <div class="md:flex">
-                <div class="text-lg mb-[36px] justify-evenly font-secondary md:text-xl">
-                    <p>
-                        Hello! My name is Xavier from sunny <a href="https://en.wikipedia.org/wiki/Subang_Jaya" class="font-bold hover:underline hover:text-gray-500">Subang Jaya, Malaysia</a> and I enjoy developing things 
-                        that live on the internet. My interest in web development started back in 2015 when I stumbled 
-                        upon an HTML & CSS tutorial on YouTube - it turns out that hacking together a front end sparked 
-                        my passion. Aside from software, I have an interest in tech hardware as well. Facing technical issues? 
-                        I'm your guy!
-                    </p>
-                    <br />
-                    <p>
-                        Fast-forward to today, I'm a Creative Technologist at Entropia - part of Accenture Song. During my university days, I've had the privilege 
-                        of working on projects during my studies where I developed a number of projects from its design phase to production phase.
-                    </p>
-                    <br />
-                    <p>
-                        <span class="font-bold">When I'm not in front of a computer screen</span>, I'm probably taking a walk and enjoying the view, 
-                        out on food hunts or patting my cat. Maybe more of patting my cat due to lockdowns.
-                    </p>
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+              <div class="col">
+                <div class="font20">
+                  <p>
+                      Hello! My name is Xavier from sunny <a href="https://en.wikipedia.org/wiki/Subang_Jaya" class="font-bold hover:underline hover:text-gray-500">Subang Jaya, Malaysia</a> and I enjoy developing things 
+                      that live on the internet. My interest in web development started back in 2015 when I stumbled 
+                      upon an HTML & CSS tutorial on YouTube - it turns out that hacking together a front end sparked 
+                      my passion. Aside from software, I have an interest in tech hardware as well. Facing technical issues? 
+                      I'm your guy!
+                  </p>
+                  <br />
+                  <p>
+                      Fast-forward to today, I'm a Creative Technologist at Entropia - part of Accenture Song. During my university days, I've had the privilege 
+                      of working on projects during my studies where I developed a number of projects from its design phase to production phase.
+                  </p>
+                  <br />
+                  <p>
+                      <span class="font-bold">When I'm not in front of a computer screen</span>, I'm probably taking a walk and enjoying the view, 
+                      out on food hunts or patting my cat. Maybe more of patting my cat due to lockdowns.
+                  </p>
                 </div>
+              </div>
     
-                <div class="md:pl-[83px]">
-                    <img src="./resources/img/xavier-khew.png" alt="Xavier Khew's Image" class="rounded-[50px] w-4/6 border-[color:var(--myred)] border-4 mx-auto md:w-[2500px] md:h-[2414]">
-                </div>
+              <div class="col">
+                <img src="./resources/img/xavier-khew.png" alt="Xavier Khew's Image" class="rounded-[50px] border-[color:var(--myred)] border-4 mx-auto ms-lg-auto">
+              </div>
             </div>
 
         </section>
 
 <!-- Skills section starts here -->
-        <section id="skills">
+        <section class="with-viewport-height-desktop" id="skills">
             <div class="">
-                <div class="text-3xl mb-[26px] md:text-4xl" data-aos="fade-up">
+              <div class="font-main font36 mb-4">
                     Skills
                 </div>
 
@@ -199,14 +201,14 @@
         </section>
 
 <!-- Projects section starts here -->
-        <section id="projects" class="">
+        <section id="projects" class="no-viewport-height">
             
-            <div class="text-3xl mb-[26px] md:text-4xl" data-aos="fade-up">
+          <div class="font-main font36 mb-4">
                 Somethings I've Built
             </div>
 
         <!-- for mobile -->
-            <div class="text-white block md:hidden">
+            <div class="d-none text-white block md:hidden">
                 
                 <div class="rounded-[50px] border-4 font-secondary mb-[20px]" id="container" data-aos="fade-up" data-aos-duration="1500">
                     <div class="backdrop-blur-[20px] rounded-[50px] px-[21px] py-[22px]">
@@ -270,59 +272,74 @@
             </div>
             
         <!-- for desktop -->
-            <div class="hidden md:grid grid-cols-2 text-xl">
+            <div class="row row-cols-1 row-cols-md-2 g-4 text-xl">
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[30px] w-[480px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="./resources/img/tcd-front-end.png" alt="" class="rounded-t-[50px] rounded-b-[5px] mx-auto">
-                    <div class="rounded-[50px] pt-[22px] px-[16px]">
-                        <p class="font-bold mb-[55px] text-[22px]">Tech Career Days 2021</p>
-                        <p class="mb-[87px] text-xl">
-                            A static site for Tech Career Days 2021, a job fair hosted by IT Society MMU Cyberjaya. 
-                            Used to present relevant information for the event.
-                        </p>
-                        <p class="mb-[23px] text-lg">HTML, CSS, Bootstrap, Javascript</p>
-                        <p class="mb-[11px]">
-                            <span class="mr-[7.5px]"><a href="https://github.com/xk2800/TCD2021-website" target="_blank" rel="noopener noreferrer"><i class="fab fa-github hover:text-gray-500"></i></a></span>
-                            <a href="https://techcareerdays.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt hover:text-gray-500"></i></a>
-                        </p>
+                <div class="col">
+                  <div class="card h-100 border-4" id="shadow-projects">
+                    <img src="./resources/img/tcd-front-end.png" class="card-img-top mx-auto w-100" alt="...">
+                    <div class="card-body rounded-[50px] pt-[22px] px-[16px]">
+                      <p class="font-bold mb-[55px] text-[22px]">Tech Career Days 2021</p>
+                      <p class="mb-[87px] text-xl">
+                          A static site for Tech Career Days 2021, a job fair hosted by IT Society MMU Cyberjaya. 
+                          Used to present relevant information for the event.
+                      </p>
                     </div>
+                    <div class="card-footer pt-[22px] px-[16px]">
+                      <p class="mb-[23px] text-lg">HTML, CSS, Bootstrap, Javascript</p>
+                      <p class="mb-[11px]">
+                          <span class="mr-[7.5px]"><a href="https://github.com/xk2800/TCD2021-website" target="_blank" rel="noopener noreferrer"><i class="fab fa-github hover:text-gray-500"></i></a></span>
+                          <a href="https://techcareerdays.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt hover:text-gray-500"></i></a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[30px] ml-[30px] w-[480px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="./resources/img/tcd-resume.png" alt="" class="rounded-t-[50px] rounded-b-[5px] mx-auto">
-                    <div class="rounded-[50px] pt-[22px] px-[16px]">
-                        <p class="font-bold mb-[22px] text-[22px]">Tech Career Days 2021 Resume Submission Portal</p>
-                        <p class="mb-[10px] text-xl">
-                            A dynamic site for Tech Career Days 2021, a job fair hosted by IT Society MMU Cyberjaya. 
-                            Used for job seekers to upload their resume where vetting is done by organisers and participating 
-                            companies are able to view the approved resumes.
-                        </p>
-                        <p class="mb-[22px] text-lg">HTML, CSS, Bootstrap, JavaScript, PHP, MySQL</p>
-                        <p class="mb-[11px]">
-                            <span class="mr-[7.5px]"><a href="https://github.com/xk2800/Tech-Career-Days-2021-Web-Application" target="_blank" rel="noopener noreferrer"><i class="fab fa-github hover:text-gray-500"></i></a></span>
-                            <!-- <a href="https://techcareerdays.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a> -->
-                        </p>
+                <!-- TCD resume -->
+                <div class="col">
+                  <div class="card h-100 border-4" id="shadow-projects">
+                    <img src="./resources/img/tcd-resume.png" class="card-img-top mx-auto w-100" alt="...">
+                    <div class="card-body rounded-[50px] pt-[22px] px-[16px]">
+                      <p class="font-bold mb-[22px] text-[22px]">Tech Career Days 2021 Resume Submission Portal</p>
+                      <p class="mb-[10px] text-xl">
+                          A dynamic site for Tech Career Days 2021, a job fair hosted by IT Society MMU Cyberjaya. 
+                          Used for job seekers to upload their resume where vetting is done by organisers and participating 
+                          companies are able to view the approved resumes.
+                      </p>
                     </div>
+                    <div class="card-footer pt-[22px] px-[16px]">
+                      <p class="mb-[22px] text-lg">HTML, CSS, Bootstrap, JavaScript, PHP, MySQL</p>
+                      <p class="mb-[11px]">
+                          <span class="mr-[7.5px]"><a href="https://github.com/xk2800/Tech-Career-Days-2021-Web-Application" target="_blank" rel="noopener noreferrer"><i class="fab fa-github hover:text-gray-500"></i></a></span>
+                          <!-- <a href="https://techcareerdays.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a> -->
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary mb-[20px] w-[480px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="./resources/img/links-site.png" alt="" class="rounded-t-[50px] rounded-b-[5px] h-[270px] mx-auto">
-                    <div class=" rounded-[50px] pt-[22px] px-[16px]">
-                        <p class="font-bold mb-[22px] text-[22px]">Linktree Alternative</p>
-                        <p class="mb-[40px] text-xl">
-                            My own rework and customised approach to Linktree.
-                        </p>
-                        <p class="mb-[20px] text-lg">Next JS, Tailwind CSS</p>
-                        <p class="mb-[11px]">
-                            <span class="mr-[7.5px]"><a href="https://github.com/xk2800/links-next.js" target="_blank" rel="noopener noreferrer"><i class="fab fa-github hover:text-gray-500"></i></a></span>
-                            <a href="https://links.xavierkhew.tech/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt hover:text-gray-500"></i></a>
-                        </p>
+                <!-- linktree -->
+                <div class="col">
+                  <div class="card h-100 border-4" id="shadow-projects">
+                    <img src="./resources/img/links-site.png" class="card-img-top mx-auto w-100" alt="...">
+                    <div class="card-body rounded-[50px] pt-[22px] px-[16px]">
+                      <p class="font-bold mb-[22px] text-[22px]">Linktree Alternative</p>
+                      <p class="mb-[40px] text-xl">
+                          My own rework and customised approach to Linktree.
+                      </p>
                     </div>
+                    <div class="card-footer rounded-[50px] pt-[22px] px-[16px]">
+                      <p class="mb-[20px] text-lg">Next JS, Tailwind CSS</p>
+                      <p class="mb-[11px]">
+                          <span class="mr-[7.5px]"><a href="https://github.com/xk2800/links-next.js" target="_blank" rel="noopener noreferrer"><i class="fab fa-github hover:text-gray-500"></i></a></span>
+                          <a href="https://links.xavierkhew.tech/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt hover:text-gray-500"></i></a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="rounded-[50px] border-4 font-secondary ml-[30px] w-[480px] h-[524px]" id="shadow-projects" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="./resources/img/fyp.png" alt="" class="rounded-t-[50px] rounded-b-[5px] h-[270px] mx-auto">
-                    <div class="rounded-[50px] pt-[22px] px-[16px]">
+                <div class="col">
+                  <div class="h-100 border-4" id="shadow-projects">
+                    <img src="./resources/img/fyp.png" alt="" class="mx-auto">
+                    <div class="pt-[22px] px-[16px]">
                         <p class="font-bold mb-[22px] text-[22px]">REXFoodipedia</p>
                         <p class="mb-[10px] text-xl">
                             An F&B e-commerce platform with full function features for customers, staff and 
@@ -334,6 +351,7 @@
                             <a href="https://techcareerdays.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a> -->
                         </p>
                     </div>
+                  </div>
                 </div>
 
 
@@ -342,8 +360,8 @@
         </section>
 
 <!-- Contact me section starts here -->
-        <section id="contact-me" class="">
-            <div class="font-secondary text-lg mb-[1px] md:mb-[24px]" data-aos="fade-up" data-aos-duration="1500">
+        <section id="contact-me" class="no-viewport-height">
+          <div class="font-main font36 mb-4">
                 What's Next?
             </div>
             <div class="text-3xl mb-[10px] md:text-4xl md:mb-[24px]" data-aos="fade-up" data-aos-duration="1500">
@@ -356,13 +374,13 @@ Whether
                 you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
             <div data-aos="fade-up" data-aos-duration="1500">
-                <a href="mailto:contact.xavierk@gmail.com" class="bg-[color:var(--myred)] pr-[11px] pl-[13px] pt-[15px] pb-[15px] rounded-[50px] text-white text-xl md:pr-[21px] md:pl-[18px] md:pt-[27px] md:pb-[23px] md:text-2xl hover:bg-[color:var(--mydarkred)]">Say Hello</a>
+                <a href="mailto:contact.xavierk@gmail.com" class="btn bg-[color:var(--myred)] pr-[11px] pl-[13px] pt-[15px] pb-[15px] rounded-[50px] text-white text-xl md:pr-[21px] md:pl-[18px] md:pt-[27px] md:pb-[23px] md:text-2xl hover:bg-[color:var(--mydarkred)]">Say Hello</a>
             </div>
         </section>
     
 
 <!-- Social media icons starts here -->
-        <section id="social-media" class="">
+        <section id="social-media" class="no-viewport-height">
             <div class="hidden md:block">
                 <div class="flex justify-between">
                     <div class="flex" style="text-align:center;" data-aos="fade-up" data-aos-duration="1500">

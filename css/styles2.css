@@ -20,6 +20,30 @@ body {
   }
 }
 
+.font36 {
+  font-size: 1.875rem;
+}
+.font36-static {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  .font36 {
+    font-size: 2.25rem;
+  }
+}
+
+.font20 {
+  font-size: 1.125rem;
+}
+.font20-static {
+  font-size: 1.25rem;
+}
+@media (min-width: 992px) {
+  .font20 {
+    font-size: 1.25rem;
+  }
+}
+
 .font18-static {
   font-size: 18px;
 }
@@ -27,13 +51,48 @@ body {
 .btn {
   font-family: "Lexend Deca", sans-serif;
   display: inline-block;
+  padding: 20px 22px;
+  border-radius: 50px;
+  font-size: 1.5rem;
 }
 .btn-main {
   background-color: #9b111a;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn-main:hover {
+  background-color: #740c13;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-section {
+@media (min-width: 992px) {
+  section {
+    height: 100vh;
+  }
+}
+section.with-viewport-height {
   height: 100vh;
+}
+@media (min-width: 992px) {
+  section.with-viewport-height-desktop {
+    height: 100vh;
+  }
+}
+section.no-viewport-height {
+  height: unset;
+}
+
+.card {
+  background-color: unset;
+}
+.card-footer {
+  border-radius: 0;
+  padding: 0;
+  background-color: unset;
+  border: none;
 }
 
 .intro, .slider {

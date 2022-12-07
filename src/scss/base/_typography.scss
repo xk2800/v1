@@ -7,6 +7,32 @@
   }
 }
 
+.font36{
+
+  &-static{
+    font-size: 2.25rem;
+  }
+
+  font-size: 1.875rem;
+
+  @media (min-width: $min-lg){
+    font-size: 2.25rem;
+  }
+}
+
+.font20{
+
+  &-static{
+    font-size: 1.25rem;
+  }
+
+  font-size: 1.125rem;
+
+  @media (min-width: $min-lg){
+    font-size: 1.25rem;
+  }
+}
+
 .font18{
   &-static{
     font-size: 18px;
