@@ -1,0 +1,14 @@
+.font48{
+
+  font-size: 2rem;
+
+  @media (min-width: $min-lg){
+    font-size: 3rem;
+  }
+}
+
+.font18{
+  &-static{
+    font-size: 18px;
+  }
+}
