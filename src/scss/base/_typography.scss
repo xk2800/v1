@@ -7,6 +7,7 @@
   }
 }
 
+//text 4xl
 .font36{
 
   &-static{
@@ -20,6 +21,7 @@
   }
 }
 
+//text xl
 .font20{
 
   &-static{
@@ -33,8 +35,28 @@
   }
 }
 
+.font22{
+
+  &-static{
+    font-size: 1.375rem;
+  }
+
+  font-size: 1.25rem;
+
+  @media (min-width: $min-lg){
+    font-size: 1.375rem;
+  }
+}
+
+//text lg
 .font18{
   &-static{
-    font-size: 18px;
+    font-size: 1.125rem;
+  }
+
+  font-size: 1rem;
+
+  @media (min-width: $min-lg){
+    font-size: 1.125rem;
   }
 }
