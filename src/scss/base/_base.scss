@@ -7,6 +7,19 @@ body{
   color: $color-font-dark;
 }
 
+a{
+
+  &.font-dark-hover{
+    @include e_transition(all, .5s);
+
+    &:hover{
+      text-decoration: underline;
+      color: $color-font-dark-hover;
+      @include e_transition(all, .5s);
+    }
+  }
+}
+
 .font-main{
   font-family: 'Lexend Deca', sans-serif;
 }

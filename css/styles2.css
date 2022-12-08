@@ -9,6 +9,17 @@ body {
   color: #363636;
 }
 
+a.font-dark-hover {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+a.font-dark-hover:hover {
+  text-decoration: underline;
+  color: #6b7280;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
 .font-main {
   font-family: "Lexend Deca", sans-serif;
 }
@@ -344,7 +355,7 @@ nav .nav-item a {
   }
 }
 nav .nav-item a:hover {
-  color: #494949;
+  color: #6b7280;
 }
 
 @media (min-width: 992px) {
