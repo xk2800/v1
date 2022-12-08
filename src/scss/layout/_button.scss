@@ -1,0 +1,21 @@
+.btn{
+  font-family: 'Lexend Deca', sans-serif;
+  display: inline-block;
+  padding: 20px 22px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+
+  &-main, &-primary{
+    background-color: $color-main-red;
+    border-color: $color-main-red;
+    color: #ffff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      background-color: $color-secondary-red;
+      border-color: $color-main-red;
+      color: #ffff;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

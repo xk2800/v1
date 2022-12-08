@@ -1,3 +1,32 @@
 section{
-  height: 100vh;
+  &.with-viewport-height{
+    height: 100vh;
+
+    &-desktop{
+      @media (min-width: $min-lg){
+        height: 100vh;
+      }
+    }
+  }
+
+  &.no-viewport-height{
+    height: unset;
+  }
+}
+
+#skills{
+  i{
+    margin-right: .5rem;
+    font-weight: 800;
+  }
+}
+
+#social-media{
+  a{
+    color: $color-main-red;
+
+    &:hover{
+      color: $color-secondary-red;
+    }
+  }
 }

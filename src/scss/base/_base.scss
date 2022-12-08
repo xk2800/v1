@@ -1,10 +1,98 @@
 body{
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Roboto";
   font-weight: 400;
+  background-color: $color-gray-100;
 }
 
 .font-main{
   font-family: 'Lexend Deca', sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+.spacing-top {
+  &-xxxs {
+    @include spacing-top(8px, 8px);
+  }
+
+  &-xxs-12 {
+    @include spacing-top(12px, 12px);
+  }
+
+  &-xxs-16 {
+    @include spacing-top(8px, 16px);
+  }
+
+  &-xs {
+    @include spacing-top(16px, 24px);
+  }
+
+  &-s {
+    @include spacing-top(28px, 36px);
+  }
+
+  &-m {
+    @include spacing-top(40px, 48px);
+  }
+
+  &-l {
+    @include spacing-top(48px, 56px);
+  }
+
+  &-xl {
+    @include spacing-top(56px, 72px);
+  }
+
+  &-xxl {
+    @include spacing-top(80px, 96px);
+  }
+
+  &-mobonly {
+    @media (max-width: $max-lg) {
+      padding-top: 26px;
+    }
+  }
+}
+
+.spacing-bottom {
+  &-xxxs {
+    @include spacing-bottom(8px, 8px);
+  }
+
+  &-xxs-12 {
+    @include spacing-bottom(12px, 12px);
+  }
+
+  &-xxs-16 {
+    @include spacing-bottom(8px, 16px);
+  }
+
+  &-xs {
+    @include spacing-bottom(16px, 24px);
+  }
+
+  &-s {
+    @include spacing-bottom(28px, 36px);
+  }
+
+  &-m {
+    @include spacing-bottom(40px, 48px);
+  }
+
+  &-l {
+
+    @include spacing-bottom(48px, 56px);
+  }
+
+  &-xl {
+    @include spacing-bottom(56px, 72px);
+  }
+
+  &-xxl {
+    @include spacing-bottom(80px, 96px);
+  }
 }

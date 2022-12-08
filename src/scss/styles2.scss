@@ -1,9 +1,11 @@
 @import "base/variables";
+@import "base/mixins";
 @import "base/font";
 @import "base/base";
 @import "base/typography";
 
 
-@import "layout/buttons";
+@import "layout/button";
 @import "layout/section";
+@import "layout/card";
 @import "layout/others";

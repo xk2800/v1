@@ -1,0 +1,51 @@
+.card{
+  background-color: unset;
+  border-radius: 10px;
+  border: 0;
+  background-color: #ffff;
+  box-shadow: 0 0 30px 1px rgba($color: #000000, $alpha: .1);
+  @include e_transition(all, .5s);
+
+  &:hover{
+    box-shadow: 0 0 30px 5px rgba($color: #000000, $alpha: .36);
+    @include e_transition(all, .5s);
+  }
+
+  .card-img-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &-body{
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+
+  &-footer{
+    border-radius: 0;
+    padding: 20px;
+    background-color: unset;
+    border: none;
+
+    .project-links{
+      a{
+        padding-right: 8px;
+
+        i{
+          width: 20px;
+          @include e_transition(all, .5s);
+          &:hover{
+            @include e_transition(all, .5s);
+            color: $color-gray-500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-me-image{
+  border: 4px solid $color-main-red;
+  border-radius: 50px;
+}

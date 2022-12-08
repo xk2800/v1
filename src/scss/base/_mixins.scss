@@ -1,0 +1,22 @@
+@mixin e_transition($property: all, $duration: .2s, $ease: linear) {
+  -webkit-transition: $property $duration $ease;
+     -moz-transition: $property $duration $ease;
+       -o-transition: $property $duration $ease;
+          transition: $property $duration $ease;
+}
+
+@mixin spacing-top($mobile, $desktop) {
+  padding-top: $mobile;
+
+  @media (min-width: $min-lg) {
+    padding-top: $desktop;
+  }
+}
+
+@mixin spacing-bottom($mobile, $desktop) {
+  padding-bottom: $mobile;
+
+  @media (min-width: $min-lg) {
+    padding-bottom: $desktop;
+  }
+}
