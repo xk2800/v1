@@ -8,14 +8,18 @@
   &-main, &-primary{
     background-color: $color-main-red;
     border-color: $color-main-red;
-    color: #ffff;
+    color: #ffff !important;
     transition: all 0.3s ease-in-out;
 
-    &:hover{
+    &:hover, &:focus, &:active{
       background-color: $color-secondary-red;
       border-color: $color-main-red;
-      color: #ffff;
       transition: all 0.3s ease-in-out;
+    }
+
+    &:focus{
+      box-shadow: 0 0 0 0.25rem $color-main-red;
+
     }
   }
 }

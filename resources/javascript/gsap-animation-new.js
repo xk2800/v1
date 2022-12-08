@@ -55,6 +55,7 @@ cards.forEach((card, i) => {
     scrub: true,
     // start: "top center",
     end: "bottom bottom",
+    once: true,
   });
 });
 
@@ -77,6 +78,7 @@ skillsBlock.forEach((skills_Block, i) => {
     scrub: true,
     // start: "top center",
     end: "bottom bottom",
+    once: true,
   });
 });
 

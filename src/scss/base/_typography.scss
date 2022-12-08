@@ -21,6 +21,19 @@
   }
 }
 
+.font22{
+
+  &-static{
+    font-size: 1.375rem;
+  }
+
+  font-size: 1.25rem;
+
+  @media (min-width: $min-lg){
+    font-size: 1.375rem;
+  }
+}
+
 //text xl
 .font20{
 
@@ -32,19 +45,6 @@
 
   @media (min-width: $min-lg){
     font-size: 1.25rem;
-  }
-}
-
-.font22{
-
-  &-static{
-    font-size: 1.375rem;
-  }
-
-  font-size: 1.25rem;
-
-  @media (min-width: $min-lg){
-    font-size: 1.375rem;
   }
 }
 

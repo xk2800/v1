@@ -15,68 +15,35 @@
 <body>
 
 <!-- navbar goes here -->
-    <nav>
-        <div class="container mx-auto font-main"> 
-            <div class="flex justify-between py-[11px] lg:py-[15px]">
 
-                <div class="flex">
-                    <a href="#home" class="flex">
-                        <img src="./resources/img/logo.png" alt="Xavier Khew's Logo" class="w-[120px]">
-                    </a>
-                </div>
-        
-                <!-- nav content right -->
-                <div class="hidden md:flex items-center space-x-[30.5px] text-xl">
-                    <a href="#about-me" class="hover:text-gray-500">About</a>
-                    <a href="#projects" class="hover:text-gray-500">Projects</a>
-                    <a href="#contact-me" class="hover:text-gray-500">Contact</a>
-                    <a href="/resume.pdf" target="_blank" class="bg-[color:var(--myred)] px-[18.75px] py-[25px] rounded-[50px] text-white">Resume</a> <!-- cursor-wait opacity-50 -->
-                </div>
-
-                <div class="menu-btn md:hidden flex items-center" id="mobile-menu-button">
-                    <div class="menu-btn__burger"></div>
-                </div>
-        
-            </div>
-        </div>
-
-        <!-- mobile menu -->
-        <div class="mobile-menu hidden md:hidden">
-            <a href="#about-me" class="block text-center pb-[30px] hover:text-gray-500">About</a>
-            <a href="#projects" class="block text-center pb-[30px] hover:text-gray-500">Projects</a>
-            <a href="#contact-me" class="block text-center pb-[56px] hover:text-gray-500">Contact</a>
-            <div class="block text-center">
-                <a href="/resume.pdf" target="_blank" class="bg-[color:var(--myred)] text-white px-[18.75px] py-[25px] rounded-[50px]">Resume</a> <!-- cursor-wait opacity-50 -->
-            </div>
-        </div>
-    </nav>
-
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a href="#home" class="flex">
-                <img src="./resources/img/logo.png" alt="Xavier Khew's Logo" class="w-[120px]">
-            </a>
+          <a href="" class="navbar-brand">
+            <img src="./resources/img/logo.png" alt="Xavier Khew's Logo" class="navi-logo">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+              <span></span>
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 space-x-[30.5px] text-xl">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font20">
               <li class="nav-item">
-                <a href="#about-me" class="nav-link hover:text-gray-500">About</a>
+                <a href="#about-me" class="nav-link">About</a>
               </li>
               <li class="nav-item">
-                <a href="#projects" class="nav-link hover:text-gray-500">Projects</a>
+                <a href="#projects" class="nav-link">Projects</a>
               </li>
               <li class="nav-item">
-                <a href="#contact-me" class="nav-link hover:text-gray-500">Contact</a>
+                <a href="#contact-me" class="nav-link">Contact</a>
               </li>
               <li class="nav-item">
-                <a href="/resume.pdf" target="_blank" class="nav-link bg-[color:var(--myred)] px-[18.75px] py-[25px] rounded-[50px] text-white">Resume</a>
+                <a href="/resume.pdf" target="_blank" class="btn btn-primary">Resume</a>
               </li>
             </ul>
           </div>
         </div>
-    </nav> -->
+    </nav>
 
 
 
@@ -100,53 +67,52 @@
 
 
 <!-- About me section starts here -->
-        <section id="about-me" class="with-viewport-height-desktop1 spacing-top-l spacing-bottom-l">
+        <section id="about-me" class="aboutme with-viewport-height-desktop1 spacing-top-l spacing-bottom-l">
           <div class="container">
             <div class="font-main font36 mb-4">
               About Me
-          </div>
+            </div>
 
-          <!-- <div class="md:flex"> -->
-          <div class="row row-cols-1 row-cols-lg-2 g-4">
-            <div class="col">
-              <div class="font20">
-                <p>
-                    Hello! My name is Xavier from sunny <a href="https://en.wikipedia.org/wiki/Subang_Jaya" class="font-bold hover:underline hover:text-gray-500">Subang Jaya, Malaysia</a> and I enjoy developing things 
-                    that live on the internet. My interest in web development started back in 2015 when I stumbled 
-                    upon an HTML & CSS tutorial on YouTube - it turns out that hacking together a front end sparked 
-                    my passion. Aside from software, I have an interest in tech hardware as well. Facing technical issues? 
-                    I'm your guy!
-                </p>
-                <br />
-                <p>
-                    Fast-forward to today, I'm a Creative Technologist at Entropia - part of Accenture Song. During my university days, I've had the privilege 
-                    of working on projects during my studies where I developed a number of projects from its design phase to production phase.
-                </p>
-                <br />
-                <p>
-                    <span class="font-bold">When I'm not in front of a computer screen</span>, I'm probably taking a walk and enjoying the view, 
-                    out on food hunts or patting my cat. Maybe more of patting my cat due to lockdowns.
-                </p>
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+              <div class="col">
+                <div class="font20">
+                  <p>
+                      Hello! My name is Xavier from sunny <a href="https://en.wikipedia.org/wiki/Subang_Jaya" class="font-bold hover:underline hover:text-gray-500">Subang Jaya, Malaysia</a> and I enjoy developing things 
+                      that live on the internet. My interest in web development started back in 2015 when I stumbled 
+                      upon an HTML & CSS tutorial on YouTube - it turns out that hacking together a front end sparked 
+                      my passion. Aside from software, I have an interest in tech hardware as well. Facing technical issues? 
+                      I'm your guy!
+                  </p>
+                  <br />
+                  <p>
+                      Fast-forward to today, I'm a Creative Technologist at Entropia - part of Accenture Song. During my university days, I've had the privilege 
+                      of working on projects during my studies where I developed a number of projects from its design phase to production phase.
+                  </p>
+                  <br />
+                  <p>
+                      <span class="font-bold">When I'm not in front of a computer screen</span>, I'm probably taking a walk and enjoying the view, 
+                      out on food hunts or patting my cat. Maybe more of patting my cat due to lockdowns.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="col d-flex justify-content-center justify-content-lg-end">
+                <img src="./resources/img/xavier-khew.png" alt="Xavier Khew's Image" class="about-me-image">
               </div>
             </div>
-  
-            <div class="col d-flex justify-content-center justify-content-lg-end">
-              <img src="./resources/img/xavier-khew.png" alt="Xavier Khew's Image" class="about-me-image">
-            </div>
-          </div>
           </div>
 
         </section>
 
 <!-- Skills section starts here -->
-        <section class="with-viewport-height-desktop1 spacing-top-l spacing-bottom-l" id="skills">
+        <section class="skills with-viewport-height-desktop1 spacing-top-l spacing-bottom-l" id="skills">
           <div class="container">
             <div class="font-main font36 mb-4">
                   Skills
             </div>
 
             <div class="row row-cols-2 row-cols-lg-4 g-4 font20">
-                <div class="col">
+                <div class="col skillsBlock">
                     <!-- Languages -->
                     <p class="font22"><strong>Languages</strong></p>
                     <p><i class="bi bi-check2-all"></i>HTML</p>
@@ -155,7 +121,7 @@
                     <p><i class="bi bi-check2-all"></i>JavaScript</p>
                     <p><i class="bi bi-check2-all"></i>SQL</p>
                 </div>
-                <div class="col">
+                <div class="col skillsBlock">
                     <!-- Frameworks -->
                     <p class="font22"><strong>Frameworks</strong></p>
                     <p><i class="bi bi-check2-all"></i>Bootstrap</p>
@@ -165,7 +131,7 @@
                     <p><i class="bi bi-check2-all"></i>React JS</p>
                     <p><i class="bi bi-check2-all"></i>Node.js</p>
                 </div>
-                <div class="col">
+                <div class="col skillsBlock">
                     <!-- Tools -->
                     <p class="font22"><strong>Tools</strong></p>
                     <p><i class="bi bi-check2-all"></i>Heroku</p>
@@ -176,7 +142,7 @@
                     <p><i class="bi bi-check2-all"></i>Linux</p>
                     <p><i class="bi bi-check2-all"></i>Zapier</p>
                 </div>
-                <div class="col">
+                <div class="col skillsBlock">
                     <!-- Design -->
                     <p class="font22"><strong>Design</strong></p>
                     <p><i class="bi bi-check2-all"></i>Figma</p>
@@ -189,7 +155,7 @@
         </section>
 
 <!-- Projects section starts here -->
-        <section id="projects" class="no-viewport-height spacing-top-l spacing-bottom-l">
+        <section id="projects" class="projects no-viewport-height spacing-top-l spacing-bottom-l">
           <div class="container">
             <div class="font-main font36 mb-4">
               <strong>Somethings I've Built</strong>
@@ -281,7 +247,7 @@
         </section>
 
 <!-- Contact me section starts here -->
-        <section id="contact-me" class="no-viewport-height spacing-top-l spacing-bottom-l">
+        <section id="contact-me" class="contact-me no-viewport-height spacing-top-l spacing-bottom-l">
           <div class="container">
             <div class="font18 mb-3">
               What's Next?
@@ -300,7 +266,7 @@
     
 
 <!-- Social media icons starts here -->
-        <section id="social-media" class="no-viewport-height spacing-top-l spacing-bottom-l">
+        <section id="social-media" class="social-media no-viewport-height spacing-top-l spacing-bottom-l">
           <div class="container">
             <div class="row row-cols-1 row-cols-md-2 justify-content-between d-flex align-items-center">
               <div class="col text-center text-md-start">
@@ -352,6 +318,7 @@
     <script src="/resources/javascript/navbar.js"></script>
     <script src="/resources/javascript/rolling-text.js"></script>
     <script src="/resources/javascript/gsap.min.js"></script>
-    <script src="/resources/javascript/gsap-animation.js"></script>
+    <script src="/resources/javascript/scrolltrigger.min.js"></script>
+    <script src="/resources/javascript/gsap-animation-new.js"></script>
 </body>
 </html>
