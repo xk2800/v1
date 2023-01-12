@@ -11,7 +11,7 @@ let project = [
       },
       {
         linkType: 3,
-        url: "https://techcareerdays.com/",
+        url: "https://xk2800.github.io/TCD2021-website/",
       }
     ]
   },
