@@ -5,7 +5,7 @@
   xavierkhew.tech
 </h1>
 <p align="center">
-  The first iteration of <a href="https://xavierkhew.tech/" target="_blank">xavierkhew.tech</a> built with HTML, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, Vanilla Javascript & <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a>  and hosted on GitHub Pages.
+  The updated version of the first iteration of <a href="https://xk2800.github.io/" target="_blank">my personal website</a> built with HTML, Boostrap 5, Vanilla Javascript & GSAP  and hosted on GitHub Pages.
 </p>
 
 <!-- ![demo] -->
