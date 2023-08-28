@@ -1,3 +1,6 @@
+@import "/resources/css/bootstrap.min.css";
+@import "/resources/css/bootstrap-icons.css";
+@import "/resources/css/styles.css";
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 body {
