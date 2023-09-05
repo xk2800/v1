@@ -1,3 +1,13 @@
+{/* <script src="/data/project.js"></script>
+<script src="/resources/javascript/jquery.min.js"></script>
+<script src="/resources/javascript/bootstrap.min.js"></script>
+<script src="/resources/javascript/rolling-text.js"></script> */}
+
+// import "/data/project.js"
+// import "/resources/javascript/jquery.min.js"
+// import "/resources/javascript/bootstrap.min.js"
+// import "/resources/javascript/rolling-text.js"
+
 // let projectDataInject = $("#datas");
 let projectDataInject = $("#datas");
 project.forEach((item) => {
