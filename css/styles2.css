@@ -12,6 +12,13 @@ body {
   color: #363636;
 }
 
+.navbar{
+  position: sticky;
+  top: 0;
+  background-color: #f3f4f6;
+  z-index: 20;
+}
+
 a.font-dark-hover {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
@@ -486,4 +493,87 @@ section.no-viewport-height {
 
 .rolling-text p {
   min-height: 55px !important;
+}
+
+table ul{
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(-4px);
+}
+
+table td{
+  vertical-align: top;
+  padding: 10px 25px 10px 0;
+}
+
+table th{
+  vertical-align: top;
+  padding: 15px 25px 15px 0;
+}
+
+table td:last-child{
+  vertical-align: top;
+  padding: 10px 0;
+}
+
+table li{
+  margin: 4px 6px 4px 0;
+}
+
+table .pill{
+  background-color: #9b111a;
+  border-radius: 50px;
+  padding: 5px 10px 4px 10px;
+  color: white;
+  font-size: 14px;
+
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.award-note{
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 3px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.award-note a{
+  text-decoration: underline;
+}
+
+.archives-table tr, .archives-table th{
+  border-bottom: 1px solid #36363652;
+}
+
+.archives-table tr:last-child{
+  border-bottom: none;
+}
+
+.archives-table thead{
+  position: sticky; 
+  top: 106px; 
+  background-color: #f3f4f6; 
+  z-index: 10;
+}
+
+#archives a:hover i:before{
+  transform: translateX(-5px);
+  transition: .15s;
+}
+
+#archives a i:before{
+  transform: translateX(0);
+  transition: .15s;
+}
+
+#projects a:hover i:before{
+  transform: translateX(5px);
+  transition: .15s;
+}
+
+#projects a i:before{
+  transform: translateX(0);
+  transition: .15s;
 }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavier Khew</title>
+    <link rel="shortcut icon" href="/resources/img/favicon.png" type="image/x-icon">
+    
+    <meta name="description" content="Xavier is a junior Creative Technologist and this is his portfolio.">
+    <meta name="keywords" content="Creative Technologist, frontend, portfolio">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Xavier Khew" />
+    <meta property="og:title" content="Xavier Khew" />
+    <meta property="og:description" content="Xavier is a junior Creative Technologist and this is his portfolio." />
+    <meta property="og:url" content="https://xk2800.github.io/"/>
+    <meta property="og:image" content="https://xk2800.github.io/" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://xk2800.github.io/" />
+
+    <link rel="stylesheet" href="/css/styles2.css">
+</head>
+<body>
+
+<!-- navbar goes here -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img src="./resources/img/logo.png" alt="Xavier Khew's Logo" class="navi-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <span></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="mb-2 navbar-nav ms-auto mb-lg-0 font20">
+              <li class="nav-item">
+                <a href="/#about-me" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="/#contact-me" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="/resume.pdf" target="_blank" class="btn btn-primary">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+<!-- Home section starts here -->
+    <div class="gsap-animations">
+
+<!-- Projects section starts here -->
+        <section id="archives" class="projects no-viewport-height spacing-top-l spacing-bottom-l">
+          <div class="container">
+            <a href="/#projects" class="mb-3 d-inline-block font-dark-hover">
+              <span class="d-flex">
+                <i class="fst-normal bi bi-arrow-left me-1"></i>
+                <span class="d-block">Back</span>
+              </span>
+            </a>
+            <div class="mb-4 font-main font36">
+              <strong>Other Things I've Built</strong>
+            </div>
+  
+            <div class="font20"></div>
+            <table class="archives-table">
+              <thead>
+                <th>Year</th>
+                <th>Project</th>
+                <th class='d-none d-md-table-cell'>Description</th>
+                <th class='d-none d-md-table-cell'>Made at</th>
+                <th>Built With</th>
+              </thead>
+              <tbody id="non-featured">
+              </tbody>
+          </table>
+          </div>
+
+        </section>
+
+    </div>
+    
+    <script src="/data/project.js"></script>
+    <script src="/resources/javascript/jquery.min.js"></script>
+    <script src="/resources/javascript/bootstrap.min.js"></script>
+    <script src="/resources/javascript/main.js"></script>
+
+</body>
+</html>
