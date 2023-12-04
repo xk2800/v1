@@ -168,28 +168,4 @@ let project = [
 
     ]
   },
-  {
-    year: '2023',
-    imagePath: "",
-    projectName: "Hartalega NGX",
-    projectDescription: "Digital clone of the physical factory in Sepang, Malaysia",
-    projectBuiltAt: "Accenture Song",
-    languagesUsed: "HTML, Animate.css, SCSS, Bootstrap 5, GSAP, Javascript, JQuery, Three JS, Vite",
-    featured: false,
-    links: [
-
-    ]
-  },
-  {
-    year: '2023',
-    imagePath: "",
-    projectName: "Hartalega NGX",
-    projectDescription: "Digital clone of the physical factory in Sepang, Malaysia",
-    projectBuiltAt: "Accenture Song",
-    languagesUsed: "HTML, Animate.css, SCSS, Bootstrap 5, GSAP, Javascript, JQuery, Three JS, Vite",
-    featured: false,
-    links: [
-
-    ]
-  },
 ]
